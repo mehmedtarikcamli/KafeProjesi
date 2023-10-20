@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
-            label1 = new Label();
             dgvSiparisler = new DataGridView();
+            label1 = new Label();
             dgvSiparisDetaylar = new DataGridView();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -61,6 +61,25 @@
             splitContainer1.SplitterDistance = 246;
             splitContainer1.TabIndex = 4;
             // 
+            // dgvSiparisler
+            // 
+            dgvSiparisler.AllowUserToAddRows = false;
+            dgvSiparisler.AllowUserToDeleteRows = false;
+            dgvSiparisler.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvSiparisler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvSiparisler.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgvSiparisler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSiparisler.Location = new Point(12, 33);
+            dgvSiparisler.MultiSelect = false;
+            dgvSiparisler.Name = "dgvSiparisler";
+            dgvSiparisler.ReadOnly = true;
+            dgvSiparisler.RowHeadersVisible = false;
+            dgvSiparisler.RowTemplate.Height = 25;
+            dgvSiparisler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSiparisler.Size = new Size(772, 197);
+            dgvSiparisler.TabIndex = 1;
+            dgvSiparisler.SelectionChanged += dgvSiparisler_SelectionChanged;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -71,23 +90,21 @@
             label1.TabIndex = 0;
             label1.Text = "Siparişler";
             // 
-            // dgvSiparisler
-            // 
-            dgvSiparisler.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgvSiparisler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSiparisler.Location = new Point(12, 33);
-            dgvSiparisler.Name = "dgvSiparisler";
-            dgvSiparisler.RowTemplate.Height = 25;
-            dgvSiparisler.Size = new Size(772, 197);
-            dgvSiparisler.TabIndex = 1;
-            // 
             // dgvSiparisDetaylar
             // 
+            dgvSiparisDetaylar.AllowUserToAddRows = false;
+            dgvSiparisDetaylar.AllowUserToDeleteRows = false;
             dgvSiparisDetaylar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvSiparisDetaylar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvSiparisDetaylar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvSiparisDetaylar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSiparisDetaylar.Location = new Point(12, 34);
+            dgvSiparisDetaylar.MultiSelect = false;
             dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
+            dgvSiparisDetaylar.ReadOnly = true;
+            dgvSiparisDetaylar.RowHeadersVisible = false;
             dgvSiparisDetaylar.RowTemplate.Height = 25;
+            dgvSiparisDetaylar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSiparisDetaylar.Size = new Size(772, 197);
             dgvSiparisDetaylar.TabIndex = 3;
             // 

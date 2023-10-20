@@ -31,10 +31,10 @@
             txtUrünAd = new TextBox();
             label1 = new Label();
             btnEkle = new Button();
-            dgvUrünler = new DataGridView();
+            dgvUrunler = new DataGridView();
             nudBirimFiyat = new NumericUpDown();
             label2 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dgvUrünler).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUrunler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudBirimFiyat).BeginInit();
             SuspendLayout();
             // 
@@ -66,15 +66,15 @@
             btnEkle.Text = "EKLE";
             btnEkle.UseVisualStyleBackColor = true;
             // 
-            // dgvUrünler
+            // dgvUrunler
             // 
-            dgvUrünler.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgvUrünler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUrünler.Location = new Point(12, 72);
-            dgvUrünler.Name = "dgvUrünler";
-            dgvUrünler.RowTemplate.Height = 25;
-            dgvUrünler.Size = new Size(530, 363);
-            dgvUrünler.TabIndex = 3;
+            dgvUrunler.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvUrunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUrunler.Location = new Point(12, 72);
+            dgvUrunler.Name = "dgvUrunler";
+            dgvUrunler.RowTemplate.Height = 25;
+            dgvUrunler.Size = new Size(530, 363);
+            dgvUrunler.TabIndex = 3;
             // 
             // nudBirimFiyat
             // 
@@ -101,14 +101,14 @@
             ClientSize = new Size(557, 450);
             Controls.Add(label2);
             Controls.Add(nudBirimFiyat);
-            Controls.Add(dgvUrünler);
+            Controls.Add(dgvUrunler);
             Controls.Add(btnEkle);
             Controls.Add(label1);
             Controls.Add(txtUrünAd);
             Name = "UrunlerForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Ürünler";
-            ((System.ComponentModel.ISupportInitialize)dgvUrünler).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUrunler).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudBirimFiyat).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -119,7 +119,7 @@
         private TextBox txtUrünAd;
         private Label label1;
         private Button btnEkle;
-        private DataGridView dgvUrünler;
+        private DataGridView dgvUrunler;
         private NumericUpDown nudBirimFiyat;
         private Label label2;
     }
